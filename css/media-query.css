@@ -1,0 +1,34 @@
+.owl-prev img,
+.owl-next img {
+    width: 20px;
+}
+
+.owl-prev,
+.owl-next {
+    left: -30px;
+    top: 150px;
+}
+
+.owl-next {
+    right: -30px;
+    top: 150px;
+    left: auto;
+}
+
+#address {
+    margin-left: 0;
+    width: 40%;
+}
+
+#address p {
+    padding-left: 5%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+footer div.rights {
+    margin-bottom: 10px;
+}

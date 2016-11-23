@@ -263,9 +263,11 @@ footer div.rights {
     font-size: .75rem;
     padding-top: 15px;
 }
- footer ul {
+
+footer ul {
     margin-bottom: 0;
- }
+}
+
 .fa-stack-2x {
     color: #fff;
 }
