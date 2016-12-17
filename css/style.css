@@ -33,27 +33,28 @@ h2,
     text-transform: uppercase;
     color: #2c78ea !important;
     font-family: OpenSans !important;
-    font-size: 1.3rem !important;
+    font-size: 1.5rem !important;
 }
 
 nav {
     background: rgba(44, 120, 234, .23);
     border-bottom: 2px solid #fff;
-    position: absolute;
+    z-index: 1030;
+    position: fixed;
+    top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
 }
 
 .nav-link,
 .nav-link:hover {
     color: #fff;
     padding: 25px 0;
-    font-size: .76rem;
+    font-size: .86rem;
 }
 
 .nav-link:hover {
-        text-decoration: underline !important;    
+    text-decoration: underline !important;
 }
 
 .navbar-toggler {
@@ -73,7 +74,7 @@ header > nav > button > span {
 }
 
 .nav-justified {
-    width: 100%;
+    width: 80% !important;
 }
 
 .nav-item {
@@ -84,16 +85,6 @@ header > nav > button > span {
     width: 100%;
     margin-bottom: 5px;
     text-align: center;
-}
-
-@media (min-width: 768px) {
-    .nav-item {
-        display: table-cell;
-        width: 1%;
-    }
-    .nav-link {
-        margin-bottom: 0;
-    }
 }
 
 .background-header {
@@ -122,7 +113,7 @@ main h2 {
 
 .about-programm p {
     margin-top: -28px;
-    font-size: .7rem;
+    font-size: .9rem;
 }
 
 .degree {
@@ -133,6 +124,7 @@ main h2 {
 #teachers a {
     text-decoration: none;
 }
+
 div.circle-avatar {
     max-width: 48%;
     width: 48%;
@@ -206,7 +198,7 @@ div.circle-avatar {
 .news-block a,
 .news-block a:hover,
 .degree + div {
-    font-size: 1.05rem;
+    font-size: 1.3rem;
     color: #2c78ea;
 }
 
@@ -219,7 +211,7 @@ div.circle-avatar {
 .item p,
 .news-block p,
 .degree {
-    font-size: .8rem;
+    font-size: .9rem;
     color: #4d4d4d;
 }
 
@@ -289,4 +281,14 @@ footer ul {
 
 .fa-envelope {
     color: #b1b1b1;
+}
+
+@media (min-width: 768px) {
+    .nav-item {
+        display: table-cell;
+        width: 1%;
+    }
+    .nav-link {
+        margin-bottom: 0;
+    }
 }

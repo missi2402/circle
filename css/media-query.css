@@ -1,3 +1,30 @@
+nav {
+    background: rgba(44, 120, 160, .85);
+}
+
+.nav-justified {
+    width: 100% !important;
+}
+
+.about-programm p {
+    font-size: 1rem;
+}
+
+h1,
+h2,
+#address h4 {
+    font-size: 1.7rem !important;
+}
+
+.nav-link,
+.nav-link:hover {
+    font-size: .9rem;
+}
+
+.background-header {
+    margin-top: 62px;
+}
+
 .owl-prev img,
 .owl-next img {
     width: 20px;
@@ -16,13 +43,21 @@
 }
 
 #address {
+    position: relative;
     margin-left: 0;
-    width: 40%;
+    width: 100%;
 }
 
 #address p {
-    padding-left: 5%;
+    font-size: .9rem;
+    padding-left: 0;
     text-align: center;
+    margin-bottom: 50px;
+}
+
+#address h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 footer {
