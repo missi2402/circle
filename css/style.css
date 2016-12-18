@@ -47,13 +47,15 @@ nav {
 }
 
 .nav-link,
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     color: #fff;
     padding: 25px 0;
     font-size: .9rem;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     text-decoration: underline !important;
 }
 
@@ -227,24 +229,23 @@ div.circle-avatar {
     position: absolute;
     z-index: 100;
     background: rgb(255, 255, 255);
-    width: 25.5%;
+    width: 200px;
     margin-left: 10%;
     margin-top: 113px;
+    padding-left: 10px;
+    border: 3px solid #2298e3;
 }
 
 #address h4 {
     font-size: 1.3rem !important;
-    margin-top: 25px;
-    margin-bottom: 68px;
-    text-align: center;
+    padding-top: 10px;
 }
 
 #address p {
     font-size: .8rem;
     font-family: OpenSans;
-    padding-left: 26%;
     line-height: 1rem;
-    margin-bottom: 115px;
+    margin-bottom: 10px;
 }
 
 footer {

@@ -1,7 +1,3 @@
-nav {
-    background: rgba(44, 120, 160, .85);
-}
-
 .nav-justified {
     width: 100% !important;
 }
@@ -44,8 +40,10 @@ h2,
 
 #address {
     position: relative;
-    margin-left: 0;
     width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    border: none;
 }
 
 #address p {
@@ -58,6 +56,7 @@ h2,
 #address h4 {
     margin-top: 0;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 footer {

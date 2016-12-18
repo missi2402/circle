@@ -1,5 +1,5 @@
  jQuery(document).ready(function() {
-    // google maps
+     // google maps
      var myCenter = new google.maps.LatLng(50.000912, 36.251374);
 
      function initialize() {
@@ -46,12 +46,13 @@
      });
      // scroll
      $('.nav a').click(function(event) {
-      event.preventDefault();
-      var href=$(this).attr('href');
-      var target=$(href);
-      var top=target.offset().top;
-      $('html,body').animate({
-        scrollTop: top
-        }, 1200);   
-      });
+         if($( window ).width() < 768) $('.navbar-toggler').click();
+         event.preventDefault();
+         var href = $(this).attr('href');
+         var target = $(href);
+         var top = target.offset().top;
+         $('html,body').animate({
+             scrollTop: top - 65
+         }, 1200);
+     });
  });
