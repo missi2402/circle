@@ -12,6 +12,11 @@ h2,
     font-size: 1.7rem !important;
 }
 
+.header-text {
+    letter-spacing: 0;
+    top: 18%;
+}
+
 .nav-link,
 .nav-link:hover {
     font-size: 1rem;
