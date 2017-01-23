@@ -37,8 +37,7 @@ h2,
 }
 
 nav {
-    background: rgba(44, 120, 234, .23);
-    border-bottom: 2px solid #fff;
+    background: rgba(184, 67, 137, .3);
     z-index: 1030;
     position: fixed;
     top: 0;
@@ -76,15 +75,15 @@ header > nav > button > span {
 }
 
 .header-text {
+	position: absolute;
+	width: 100%;
+	text-align: center;
     color: #fff;
-    position: absolute;
     font-family: OpenSans;
-    font-weight: bold;
-    top: 13vw;
-    left: 9%;
-    font-size: 5.2vw;
-    line-height: 1.41;
-    letter-spacing: -4px;
+    top: 18vw;
+    font-size: 3.8vw;
+    line-height: 1.5;
+    letter-spacing: -2px;
 }
 
 .background-header {
@@ -188,6 +187,7 @@ div.circle-avatar {
 }
 
 .news-block img {
+	width: 100%;
     max-width: 100%;
     padding-bottom: 15px;
 }
@@ -303,12 +303,5 @@ footer ul {
     }
     .nav-link {
         margin-bottom: 0;
-    }
-}
-
-/*@media (max-width: 1100px) {
-    .header-text {
-        font-size: 3.5rem;
-        top: 21%;
     }
 }

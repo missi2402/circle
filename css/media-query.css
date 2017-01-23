@@ -12,9 +12,17 @@ h2,
     font-size: 1.7rem !important;
 }
 
+header {
+    margin-top: -2px;
+}
+
 .header-text {
     letter-spacing: 0;
     top: 18%;
+}
+
+nav {
+    background: rgb(184, 67, 137);
 }
 
 .nav-link,
