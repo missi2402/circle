@@ -1,0 +1,72 @@
+﻿body {
+         background-image:url('images/Bottom_texture.jpg');
+         background-attachment:fixed;
+     } 
+div.all {
+         background-color:#cfc;
+         width:800px;
+         padding-bottom:20px;
+         padding-top:10px;
+         position:relative; 
+         display:block;
+         margin: 40px auto;
+         border:solid 1px #f00;
+         opacity:0.9;
+         filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+}
+div.contacts {
+         font: bold 14px arial;
+         color:#000;	
+         margin:30px 100px 30px 100px;
+         text-align:justify;
+}
+div.oldbr {
+         font: bold 24px arial;
+         color:#00f;	
+         width:100%;
+         text-align:center;
+}
+#old{
+	width:500px;
+	margin:20px auto;
+	border:solid 1px #f00;
+}
+#modern-browser{
+	background:#ff8;
+	margin:0;
+	padding:10px 20px 20px;
+	list-style:none;
+}
+#modern-browser li{
+	padding-left:130px;
+	margin-top:20px;
+}
+#modern-browser li.ie{background:url('img/ie.png') no-repeat 5px top;}
+#modern-browser li.chrome{background:url('img/chrome.png') no-repeat 5px top;}
+#modern-browser li.opera{background:url('img/opera.png') no-repeat 5px top;}
+#modern-browser li.firefox{background:url('img/firefox.png') no-repeat 5px top;}
+#modern-browser h2{
+	margin:0 0 10px;
+	font-weight:normal;
+}
+#modern-browser .file{
+	padding:0;
+	margin:10px 0 0;
+	list-style:none;
+}
+#modern-browser .file li{
+	padding:2px 0 2px 22px;
+	margin:0;
+}
+
+#slogans{
+        align:center;
+        text-transform:none;
+        font: bold 12px arial;
+	margin:20px auto;
+        color:#000;
+        }
+td
+{
+padding:0 25px 0 25px;
+}

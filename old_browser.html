@@ -1,0 +1,77 @@
+<?php
+$er_time=date("H:i:s d M Y");
+$H=getenv("HTTP_REFERER");
+$R=getenv("REMOTE_ADDR");
+$W=getenv("REQUEST_URI");
+while (ereg('%([0-9A-F]{2})',$H)){ 
+    $val=ereg_replace('.*%([0-9A-F]{2}).*','\1',$H); 
+    $newval=chr(hexdec($val));
+    $H=str_replace('%'.$val,$newval,$H); 
+    }
+$f=fopen("l0gs/visits.log",'a');
+flock ($f,2); 
+fwrite($f,"$er_time\n Rf: $H\n IP: $R\n Rq: $W\n"); 
+fclose($f);
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Kozina.com.ua. Кружок компьютерных инженеров НТУ "ХПИ"</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Кружок компьютерных инженеров НТУ "ХПИ" Козина" />
+        <meta name="keywords" content="НТУ ХПИ, Кружок компьютерных инженеров, кафедра ВТП, кафедра ОТП "/>
+
+    </head>
+    <link rel="stylesheet" type="text/css" media="all" href="old.css" />
+    <link rel="stylesheet" type="text/css" href="tool.css" />
+    <body>
+      <div class="all">
+       <div class="contacts">Сайт <a href="http://kozina.com.ua">http://kozina.com.ua</a> оптимизирован для просмотра в современных браузерах. 
+         </div>
+       <div class="oldbr">Ваш <span class="hotspot" onmouseover="tooltip.show('<strong>Ошеньнна старый баурсэр, насяльника, сильна ошеньнна</strong>');" onmouseout="tooltip.hide();">браузер сильно устарел</span>, обновите его:</div>
+       <div id="old">
+         <ul id="modern-browser">
+          <li class="ie">
+           <h2>Internet Explorer</h2>
+           <div>
+           Современный браузер от компании Microsoft.
+            <ul class="file">
+             <li class="microsoft"><a href="http://www.microsoft.com/rus/windows/internet-explorer/">Internet Explorer</a></li>
+            </ul>
+           </div>
+          </li>
+          <li class="chrome">
+           <h2>Google Chrome</h2>
+           <div>
+           Популярный браузер от компании Google.
+            <ul class="file">
+             <li><a href="http://www.google.com/chrome">Google Chrome</a></li>
+            </ul>
+           </div>
+          </li>
+	  <li class="opera">
+	   <h2>Opera</h2>
+	   <div>
+	    Самый быстрый браузер на свете.
+	    <ul class="file">
+	     <li><a href="http://www.opera.com/browser/">Opera</a></li>
+	    </ul>
+	   </div>
+          </li>
+	  <li class="firefox">
+	   <h2>FireFox</h2>
+	   <div>
+	    Один из самых распространенных браузеров. 
+	    <ul class="file">
+	     <li><a href="http://ru.www.mozilla.com/ru/">Mozilla FireFox</a></li>
+	    </ul>
+	  </div>
+	</li>
+       </ul>
+      </div>
+       <div class="contacts">Все вопросы по сотрудничеству и свои предложения вы можете передать по электронной почте kozina4common@gmail.com<b></b> </div>
+    </div>
+    <script type="text/javascript" language="javascript" src="tool.js"></script>
+ 
+    </body>
+</html>
